@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.giffing.bucket4j.spring.boot.starter</groupId>
+	<artifactId>bucket4j-spring-boot-starter-examples</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>bucket4j-spring-boot-starter-examples</name>
+	<description>Spring Boot Starter für Bucket4J</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.3.RELEASE</version>
+		<relativePath />
+	</parent>
+
+	<modules>
+<!--		<module>bucket4j-spring-boot-starter-example-ehcache</module>-->
+<!--		<module>bucket4j-spring-boot-starter-example-zuul</module>-->
+		<module>bucket4j-spring-boot-starter-example-hazelcast</module>
+<!--		<module>bucket4j-spring-boot-starter-example-caffeine</module>-->
+<!--		<module>bucket4j-spring-boot-starter-example-webflux</module>-->
+<!--		<module>bucket4j-spring-boot-starter-example-infinispan</module>-->
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.giffing.bucket4j.spring.boot.starter</groupId>
+				<artifactId>bucket4j-spring-boot-starter</artifactId>
+				<version>0.1.16-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.vladimir-bukhtoyarov</groupId>
+				<artifactId>bucket4j-core</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>com.github.vladimir-bukhtoyarov</groupId>
+				<artifactId>bucket4j-jcache</artifactId>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

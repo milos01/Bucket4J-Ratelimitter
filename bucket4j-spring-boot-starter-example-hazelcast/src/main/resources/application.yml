@@ -1,0 +1,12 @@
+server:
+  port: ${PORT:0}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  security:
+    enabled: false
+#  cache:
+#    jcache:
+#      config: classpath:hazelcast.xml

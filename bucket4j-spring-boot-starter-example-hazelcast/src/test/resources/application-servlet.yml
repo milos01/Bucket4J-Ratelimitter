@@ -1,0 +1,7 @@
+management:
+  security:
+    enabled: false
+spring:
+  cache:
+    jcache:
+      config: classpath:hazelcast.xml
